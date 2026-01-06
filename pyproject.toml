@@ -5,7 +5,7 @@ description = "Django app Raz"
 authors = [
     {name = "Raz"}
 ]
-license = {text = "Free"}
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
