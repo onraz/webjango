@@ -26,17 +26,18 @@ dev = [
     "mypy (>=1.19.1,<2.0.0)",
     "pre-commit (>=4.5.1,<5.0.0)",
     "django-stubs[compatible-mypy] (>=5.2.8,<6.0.0)",
-    "pytest-django (>=4.11.1,<5.0.0)"
+    "pytest-django (>=4.11.1,<5.0.0)",
+    "djangorestframework-stubs[compatible-mypy] (>=3.16.6,<4.0.0)"
 ]
 
 [tool.ruff]
 line-length = 120
 
 [tool.mypy]
-plugins = ["mypy_django_plugin.main"]
+plugins = ["mypy_django_plugin.main", "mypy_drf_plugin.main"]
 
 [tool.django-stubs]
-DJANGO_SETTINGS_MODULE = "raz_webjango.settings"
+django_settings_module = "raz_webjango.settings"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "raz_webjango.settings"
