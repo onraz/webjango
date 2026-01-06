@@ -38,5 +38,5 @@ plugins = ["mypy_django_plugin.main"]
 [tool.django-stubs]
 DJANGO_SETTINGS_MODULE = "raz_webjango.settings"
 
-[pytest]
+[tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "raz_webjango.settings"
